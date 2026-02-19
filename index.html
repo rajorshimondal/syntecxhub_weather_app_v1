@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="weather_app">
+            <div class="container">
+                <h1 class="title">Weather App <img src="./assest/purepng.com-weather-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596142qx4ep.png" id="image"></img></h1>
+                <p class="subtitle">Check the weather in your city</p>
+                <div class="search">
+                    <input class="city" type="text" placeholder="Enter city name..." id="city">
+                    <button class="check" type="submit" id="check">Search </button>
+                </div>
+
+                <div id="weather-result" class="weather-result" style="display: none;">
+                   
+                    <div class="weather-info">
+                        <h2 id="display-city">City Name</h2>
+                        <div class="temp-container">
+                            <span id="temp">20</span><span class="unit">°C</span>
+                        </div>
+                        <p id="description">Sunny</p>
+                    </div>
+
+                    <div class="details-grid">
+                        
+                        <div class="detail-item">
+                            <span>Humidity</span>
+                            <span id="humidity">0%</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span>Wind</span>
+                            <span id="wind">0 km/h</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <p class="update-time" id="update"></p>
+                <p class="error" id="error"></p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
