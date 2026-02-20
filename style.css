@@ -74,7 +74,7 @@ main {
 }
 
 .city {
-    flex: 1 1 320px;
+    flex: 1;
     min-width: 0;
     padding: 15px 20px;
     border-radius: 15px;
@@ -188,7 +188,7 @@ main {
 
 @media (max-width: 768px) {
     body {
-        align-items: flex-start;
+        align-items:center;
     }
 
     main {
@@ -220,9 +220,12 @@ main {
         padding: 16px;
         border-radius: 18px;
     }
-
     .city{
-        height: 50px;
+        font-size: 1.4rem;
+        height: fit-content;
+    }
+    .city::placeholder {
+        font-size: 1.3rem;
     }
     .check {
         padding: 12px 14px;
